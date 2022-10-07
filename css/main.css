@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+span{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #833131;
+    margin-top: 4.3rem;
+    margin-left: 4.3rem;
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+span::before{
+    content: "";
+    width: 1.3rem;
+    height: .3rem;
+    background-color: #833131;
+}
+
+.conteiner{
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+img{
+    max-width: 100%;
+}
+
+h4{
+    display: none;
+}
+
+h2{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: #2F2E41;
+}
+
+p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #2F2E41;
+}
+
+a{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    display: block;
+    background-color: #2F2E41;
+    text-align: center;
+    text-decoration: none;
+    padding-block: 1rem;
+    border-radius: .4rem;
+    box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+@media(min-width:600px){
+
+    .conteiner{
+        text-align: center;
+       }
+}
+
+@media(min-width:800px) {
+    .conteiner{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    figure{
+        width: 50%;
+    }
+    .conteudo{
+        width: 50%;
+    }
+    span{
+        display: none;
+    }
+
+    h4{
+        display: block;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: #833131;
+    }
+
+    a{
+        align-self: flex-start;
+        padding-inline: 4rem;
+    }
+}
+
+@media(min-width: 1020px){
+    .conteiner{
+        position: static;
+        max-width: 83.8;
+        margin: 50vh auto;
+    }
+
+    .conteudo{
+        justify-content:center;
+        width: 30%;
+        text-align: left;
+
+    }
+
+    figure{
+        max-width: 70%;
+    }
+}
